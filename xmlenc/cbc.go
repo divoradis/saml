@@ -152,9 +152,9 @@ var (
 
 	// TripleDES implements 3DES in CBC mode for encryption and decryption
 	TripleDES BlockCipher = CBC{
-		keySize:   8,
+		keySize:   24,
 		algorithm: "http://www.w3.org/2001/04/xmlenc#tripledes-cbc",
-		cipher:    des.NewCipher,
+		cipher:    des.NewTripleDESCipher,
 	}
 )
 
